@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Asha@123
+
+spring.jpa.properties.hibernate.default_schema: public
+spring.datasource.hikari.connectionTimeout: 20000
+spring.datasource.hikari.maximumPoolSize: 5
+spring.jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+notification:
+  slack:
+    url: "https://api.com/slack_events/v1/webhooks/99HtOSN2xquP3NhM5BlUiUyXJICKFs8BzNWb5jnNwWLnnrhHGhVN03S3L6qMyK21"
+    channel: "CC4N66VUZ"
+    enabled: false
+    username: "slack-user"
